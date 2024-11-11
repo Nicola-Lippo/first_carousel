@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 512px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.items {
+    position: relative;
+    width: 512px;
+    height: 768px;
+}
+
+.item {
+    height: 100%;
+    display: none;
+    position: relative;
+
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 15px;
+}
+
+.item-active {
+    display: block;
+}
+
+.h3 {
+    position: absolute;
+    bottom: 20px;
+    font-size: 30px;
+    color: white;
+    padding-left: 20px;
+
+}
+
+/*button*/
+.prev,
+.next {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    border-radius: 50%;
+    background: #cccccc;
+    position: absolute;
+    /* Posiziona i bottoni al centro verticale */
+    top: 50%;
+    /* Centra verticalmente */
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 999;
+}
+
+/* Posizionamento del bottone 'prev' a sinistra */
+.prev {
+    left: -50px;
+}
+
+/* Posizionamento del bottone 'next' a destra */
+.next {
+    right: -50px;
+}
